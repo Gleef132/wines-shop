@@ -1,0 +1,189 @@
+._container {
+	max-width: 1590px;
+	margin: 0px auto;
+	padding: 0 15px;
+}
+
+.about {
+	background: #fff;
+	height: 100%;
+	color: #000;
+	min-height: 100vh;
+	padding: 50px 0px 0px 0px;
+
+	&__content {
+		width: 100%;
+		display: flex;
+		gap: 100px;
+
+		.about__link:nth-child(1) {
+			align-items: end;
+		}
+
+		.about__link:nth-child(2) {
+			align-items: center;
+			margin-left: -50px;
+		}
+	}
+
+	&__title {
+		max-width: 620px;
+		font-size: 57px;
+	}
+
+	&__link {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		gap: 100px;
+	}
+
+	&__img {
+		position: relative;
+		max-width: 410px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transform: translate(-60%, -20%);
+			background: url('https://chardonnay.ancorathemes.com/wp-content/uploads/2021/08/about-us.svg') center no-repeat;
+			background-size: cover;
+			width: 200px;
+			height: 200px;
+			animation: animateRotate 10s linear infinite 0s;
+		}
+	}
+
+	&__text {
+		margin-top: 50px;
+		color: #888682;
+		font-family: 'Quattrocento Sans', sans-serif;
+		font-size: 17px;
+		max-width: 525px;
+		line-height: 1.5;
+	}
+}
+
+@keyframes animateRotate {
+	from {
+		transform: translate(-60%, -20%) rotate(0deg);
+	}
+
+	to {
+		transform: translate(-60%, -20%) rotate(360deg);
+	}
+}
+
+@media(max-width: 1200px) {
+	.about {
+		&__title {
+			max-width: 310px;
+			font-size: 30px;
+		}
+
+		&__content {
+
+			.about__link:nth-child(1) {
+				img {
+					max-width: 300px;
+				}
+			}
+
+			.about__link:nth-child(2) {
+				img {
+					max-width: 350px;
+				}
+			}
+		}
+
+		&__text {
+			margin-top: 0;
+			max-width: 350px;
+			line-height: 1.2;
+		}
+
+		&__img {
+
+			&::before {
+				height: 150px;
+				width: 150px;
+			}
+		}
+	}
+}
+
+@media(max-width: 850px) {
+	.about {
+		&__title {
+			max-width: 310px;
+			font-size: 25px;
+		}
+
+		&__content {
+
+			.about__link:nth-child(1) {
+				img {
+					max-width: 250px;
+				}
+			}
+
+			.about__link:nth-child(2) {
+				img {
+					max-width: 280px;
+				}
+			}
+		}
+
+		&__text {
+			font-size: 14px;
+		}
+
+		&__img {
+
+			&::before {
+				height: 100px;
+				width: 100px;
+			}
+		}
+	}
+}
+
+@media(max-width: 680px) {
+	.about {
+		&__content {
+			flex-direction: column;
+			align-items: center;
+			gap: 50px;
+
+			.about__link:nth-child(2) {
+				flex-direction: column-reverse;
+				padding-bottom: 15px;
+			}
+		}
+
+		&__link {
+			gap: 20px;
+		}
+	}
+}
+
+@media(max-width: 430px) {
+	.about {
+		&__content {
+
+			.about__link:nth-child(1) {
+				img {
+					max-width: 180px;
+				}
+			}
+
+			.about__link:nth-child(2) {
+				img {
+					max-width: 200px;
+				}
+			}
+		}
+	}
+}

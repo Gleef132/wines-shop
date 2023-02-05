@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Quattrocento+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+body {
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	background: #111;
+}
+
+mark {
+	background: #ced932;
+}
+
+// global classes
+._container {
+	max-width: 1590px;
+	margin: 0px auto;
+	padding: 0 15px;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: normal;
+	gap: 15px;
+
+	span {
+		font-weight: 700;
+		font-family: 'Quattrocento Sans', sans-serif;
+		text-transform: uppercase;
+		color: #B98D58;
+		font-size: 13px;
+		letter-spacing: 1.8px;
+		opacity: .9;
+	}
+}
+
+.logo {
+	cursor: pointer;
+
+	img {
+		border-radius: 50%;
+	}
+}
+
+//////////

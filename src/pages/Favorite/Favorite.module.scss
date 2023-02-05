@@ -1,0 +1,28 @@
+.favorite {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	background: #fff;
+	color: #333333;
+	font-family: 'Quattrocento Sans', sans-serif;
+
+	&__zero {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 30px;
+		color: #333333;
+		font-weight: 600;
+		display: block;
+		position: relative;
+		margin: 100px 0 0 0;
+		text-align: center;
+
+		&.active {
+			display: none;
+		}
+	}
+
+	&__content {
+		padding: 10px 0 50px 0;
+	}
+}

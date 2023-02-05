@@ -1,0 +1,265 @@
+.cart {
+	background: #fff;
+	color: #333333;
+	font-family: 'Quattrocento Sans', sans-serif;
+
+	&__container {
+		max-width: 1290px;
+		min-height: 50vh;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 100px 0;
+		padding: 100px 0 100px 0;
+	}
+
+	&__products {
+		display: flex;
+		flex-direction: column;
+		gap: 20px 0;
+	}
+
+	&__products__header {
+		display: grid;
+		grid-template-columns: 4fr 1fr 1.5fr 1fr 1fr;
+
+		.cart__products__header__title:nth-child(5) {
+			justify-self: center;
+		}
+	}
+
+	&__products__header__title {
+		font-size: 17px;
+	}
+
+	&__product__list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px 0;
+	}
+
+	&__product__link {
+		font-size: 19px;
+	}
+
+	&__product__content {
+		display: grid;
+		grid-template-columns: 4fr 1fr 1.5fr 1fr 1fr;
+		color: #909190;
+		height: 80px;
+		position: relative;
+		padding-bottom: 100px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background: #909190;
+			z-index: 1;
+			bottom: 0;
+			left: 0;
+			opacity: .3;
+		}
+	}
+
+	&__product__name {
+		display: flex;
+		align-items: center;
+
+		h2 {
+			font-family: 'Cormorant Garamond', serif;
+			font-size: 19px;
+			color: #333333;
+		}
+	}
+
+	&__product__img {
+		width: 80px;
+		height: 80px;
+
+		img {
+			width: 100%;
+			border-radius: 50%;
+		}
+	}
+
+	&__product__price {
+		align-self: center;
+	}
+
+	&__product__amount {
+		display: flex;
+		border: 1px solid #c4c4c4;
+		border-radius: 50px;
+		max-width: 125px;
+		height: 50px;
+		padding: 5px 20px;
+		align-items: center;
+		justify-content: space-between;
+		align-self: center;
+	}
+
+	&__product__amount__arrow {
+		display: flex;
+		flex-direction: column;
+
+		svg {
+			width: 20px;
+		}
+
+		svg:nth-child(1) {
+			transform: rotate(-90deg);
+		}
+
+		svg:nth-child(2) {
+			transform: rotate(90deg);
+		}
+	}
+
+	&__product__remove {
+		position: relative;
+		width: 30px;
+		height: 30px;
+		align-self: center;
+		display: flex;
+		align-items: center;
+		justify-self: center;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background: #909190;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
+
+	&__product__mobile {
+		display: none;
+	}
+
+	&__total {
+		display: flex;
+		flex-direction: column;
+		font-size: 19px;
+		width: 40%;
+		gap: 20px;
+	}
+
+	&__total__title {
+		font-family: 'Cormorant Garamond', serif;
+		font-weight: normal;
+	}
+
+	&__total__item {
+		width: 100%;
+		display: flex;
+	}
+
+	&__total__item__title {
+		width: 40%;
+		padding: 20px 10px;
+		font-weight: normal;
+		border: 1px solid #c4c4c4;
+	}
+
+	&__total__item__price {
+		padding: 20px 10px;
+		width: 60%;
+		border: 1px solid #c4c4c4;
+		border-left: none;
+	}
+
+	&__total__btn {
+		width: 100%;
+		border: none;
+		color: #fff;
+		background: #b4bb4b;
+		transition: all 0.3s ease 0s;
+		padding: 15px;
+		border-radius: 50px;
+		white-space: nowrap;
+
+		&:hover {
+			background: #b4bb0b;
+		}
+	}
+}
+
+@media(max-width: 991px) {
+	.cart {
+		&__products__header {
+			grid-template-columns: 2.5fr 1fr 1.5fr 1fr 1fr;
+		}
+
+		&__product__link {
+			grid-template-columns: 2.5fr 1fr 1.5fr 1fr 1fr;
+		}
+	}
+}
+
+@media(max-width: 700px) {
+	.cart {
+		&__products__header {
+			display: none;
+		}
+
+		&__product__content {
+			display: none;
+		}
+
+		&__product__mobile {
+			display: flex;
+			flex-direction: column;
+			gap: 15px 0px;
+			width: 100%;
+			position: relative;
+			padding-bottom: 30px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				background: #909190;
+				z-index: 1;
+				bottom: 0;
+				left: 0;
+				opacity: .3;
+			}
+		}
+
+		&__product__mobile__link {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__product__name {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__product__amount {
+			width: max(120px);
+		}
+
+		&__total {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,551 @@
+.product {
+	height: 100%;
+	position: relative;
+	min-height: 100vh;
+	background: #fff;
+	color: #333333;
+	font-family: 'Quattrocento Sans', sans-serif;
+
+	&__container {
+		max-width: 1290px;
+		margin: 0px auto;
+		padding: 0 15px;
+		display: flex;
+		flex-direction: column;
+		gap: 50px 0;
+	}
+
+	&__header {
+		height: 45vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: url('https://chardonnay.ancorathemes.com/wp-content/uploads/2020/06/new-wine-header-bg-copyright.jpg') center no-repeat;
+		background-size: cover;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: #1A1A1A;
+			opacity: 0.55;
+			top: 0;
+			left: 0;
+		}
+
+		h1 {
+			font-family: 'Cormorant Garamond', serif;
+			font-size: 57px;
+			font-weight: 300;
+			color: #fff;
+			position: relative;
+			z-index: 1;
+		}
+
+		svg {
+			position: relative;
+			z-index: 1;
+			margin-top: 10px;
+			width: 30px;
+			transform: rotate(90deg);
+			color: #fff;
+		}
+	}
+
+	&__top {
+		padding: 100px 0 0 0;
+		display: flex;
+		width: 100%;
+	}
+
+	&__gallery {
+		display: flex;
+		width: 50%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__img__controls {
+		display: flex;
+		flex-direction: column;
+		gap: 15px 0;
+	}
+
+	&__img__control {
+		width: 90px;
+		height: 90px;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__main__img {
+		max-width: 482px;
+
+
+		img {
+			width: 100%;
+		}
+
+		.product__main__icon:nth-child(1) {
+			top: 50px;
+			right: 50px;
+		}
+
+		.product__main__icon:nth-child(3) {
+			bottom: 50px;
+			right: 50px;
+		}
+	}
+
+	&__main__icon {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		z-index: 1;
+
+		&:hover {
+			path {
+				fill: #979c0c;
+			}
+
+			color: #979c0c;
+		}
+
+
+		&.active {
+			path {
+				fill: #979c0c;
+			}
+
+			color: #979c0c;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		gap: 40px 0;
+	}
+
+	&__title {
+		font-size: 44px;
+		font-family: "Cormorant Garamond", serif;
+		font-weight: 500;
+	}
+
+	&__info {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	&__price {
+		font-size: 28px;
+		color: #B4BB6B;
+		font-family: inherit;
+	}
+
+	&__ratings {
+		position: relative;
+		width: 75px;
+		height: 25px;
+
+		.product__rating:nth-child(1) {
+			svg {
+				path {
+					fill: #d3ced2;
+				}
+			}
+		}
+
+		.product__rating:nth-child(2) {
+			overflow: hidden;
+			height: 15px;
+			white-space: nowrap;
+
+			svg {
+				path {
+					fill: #ffc107;
+				}
+			}
+		}
+	}
+
+	&__rating {
+		position: absolute;
+
+		svg {
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	&__descprition {
+		font-size: 17px;
+		color: #888682;
+		font-family: inherit;
+	}
+
+	&__btn {
+		cursor: pointer;
+		color: #fff;
+		padding: 15px 55px;
+		border-radius: 50px;
+		max-width: 170px;
+		background: #B4BB00;
+		border: 1px solid #B4BB00;
+		font-family: inherit;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			background: #979c0c;
+		}
+	}
+
+	&__category {
+		font-size: 19px;
+		font-family: inherit;
+
+		span {
+			color: #888682;
+			font-size: 18px;
+			cursor: pointer;
+
+			&:hover {
+				color: #979c0c;
+			}
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		flex-direction: column;
+		gap: 50px 0;
+		padding: 0 0 100px 0;
+	}
+
+	&__nav {}
+
+	&__list {
+		display: flex;
+		gap: 0 10px;
+	}
+
+	&__link {
+		font-family: inherit;
+		font-size: 13px;
+		padding: 21px;
+		font-weight: 700;
+		line-height: 16px;
+		letter-spacing: 1px;
+		text-align: center;
+		width: 290px;
+		transition: all 0.3s ease 0s;
+		border-top: 2px solid transparent;
+
+		&.active {
+			border-top: 2px solid #333333;
+		}
+
+		&:hover {
+			border-top: 2px solid #333333;
+			cursor: pointer;
+		}
+
+	}
+
+	&__tabs {}
+
+	&__tab {
+		display: none;
+		color: #888682;
+		font-size: 17px;
+		line-height: 1.7;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	&__reviews {
+		color: #333333;
+		display: flex;
+		gap: 0 10px;
+		position: relative;
+	}
+
+	&__commends {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		gap: 30px 0;
+	}
+
+	&__commend {
+		display: flex;
+		width: 100%;
+		gap: 0 10px;
+		align-items: center;
+	}
+
+	&__commend__img {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+
+	&__commend__content {}
+
+	&__commend__name {
+		font-size: 19px;
+		font-family: 'Cormorant Garamond', serif;
+		font-weight: 600;
+
+		span {
+			color: #797C7F;
+			font-size: 16px;
+			font-weight: 300;
+			font-family: 'Quattrocento Sans', sans-serif;
+		}
+	}
+
+	&__commend__text {
+		color: #888682;
+		font-size: 17px;
+		font-family: 'Quattrocento Sans', sans-serif;
+	}
+
+	&__commend__ratings {
+		position: relative;
+		height: 15px;
+		width: 75px;
+
+		.product__commend__rating:nth-child(1) {
+			height: 15px;
+			white-space: nowrap;
+
+			svg {
+				path {
+					fill: #d3ced2;
+				}
+			}
+		}
+
+		.product__commend__rating:nth-child(2) {
+			overflow: hidden;
+			height: 20px;
+			white-space: nowrap;
+
+			svg {
+				path {
+					fill: #ffc107;
+				}
+			}
+		}
+	}
+
+	&__commend__rating {
+		top: 0;
+		position: absolute;
+
+		svg {
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	&__review__form {
+		position: sticky;
+		top: 100px;
+		width: 50%;
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		gap: 20px 0;
+	}
+
+	&__review__form__title {
+		font-size: 25px;
+		font-family: 'Cormorant Garamond', serif;
+	}
+
+	&__review__form__item {}
+
+	&__review__form__name {
+		font-size: 17px;
+		font-family: 'Quattrocento Sans', sans-serif;
+		font-weight: 300;
+	}
+
+	&__review__form__input {
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #DED6D4;
+		padding: 5px;
+		font-size: 15px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__review__form__text {
+		width: 100%;
+		border: none;
+		resize: none;
+		border-bottom: 1px solid #DED6D4;
+		font-size: 15px;
+		padding: 5px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__review__form__required {
+		position: absolute;
+		font-size: 20px;
+		opacity: 0;
+		z-index: -1;
+		transition: all 0.3s ease 0s;
+
+		&.active {
+			opacity: 1;
+			z-index: 1;
+		}
+	}
+
+	&__review__ratings {
+		position: relative;
+		width: 75px;
+		height: 25px;
+
+	}
+
+	&__review__rating {
+		position: absolute;
+		display: flex;
+		gap: 0 3px;
+
+		&:hover {
+			cursor: pointer;
+
+			svg {
+				path {
+					fill: #ffc000;
+				}
+			}
+		}
+
+		svg {
+			width: 20px;
+			height: 20px;
+
+			path {
+				stroke: #ffc000;
+				stroke-width: 5px;
+			}
+
+			&:hover {
+				path {
+					fill: #979c0c;
+					stroke: #979c0c;
+				}
+			}
+		}
+	}
+
+	&__review__btn {
+		cursor: pointer;
+		color: #FFFFFF;
+		border: none;
+		padding: 15px 50px;
+		background: #B4BB00;
+		border-radius: 30px;
+		font-family: 'Quattrocento Sans', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			background: #979c0c;
+		}
+
+		&.required {
+			background: #cf364f;
+		}
+	}
+}
+
+
+
+@media(max-width: 991px) {
+	.product {
+		&__top {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__gallery {
+			width: 100%;
+			justify-content: center;
+		}
+
+		&__img__control {
+			width: 110px;
+			height: 110px;
+		}
+
+		&__content {
+			width: 100%;
+		}
+	}
+}
+
+@media(max-width: 670px) {
+	.product {
+		&__reviews {
+			flex-direction: column;
+		}
+
+		&__commends {
+			width: 100%;
+		}
+
+		&__review__form {
+			width: 100%;
+		}
+	}
+}
+
+@media(max-width: 550px) {
+	.product {
+		&__img__control {
+			width: 90px;
+			height: 90px;
+		}
+	}
+}
+
+@media(max-width: 450px) {
+	.product {
+		&__img__control {
+			width: 80px;
+			height: 80px;
+		}
+
+		&__main__img {
+			svg {
+				right: 5px;
+				bottom: 15px;
+			}
+		}
+	}
+}
