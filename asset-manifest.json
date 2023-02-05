@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/wines-shop/static/css/main.b7d3abb9.css",
+    "main.js": "/wines-shop/static/js/main.8417ddb4.js",
+    "static/media/top-view-wine-bottles-with-grapes.png": "/wines-shop/static/media/top-view-wine-bottles-with-grapes.112828e84c01683078ff.png",
+    "static/media/wooden-barrel-with-bottles-glasses-wine.png": "/wines-shop/static/media/wooden-barrel-with-bottles-glasses-wine.ef74ed74febc0e69fbef.png",
+    "static/media/winegrape.png": "/wines-shop/static/media/winegrape.23a020f280dbf94b4975.png",
+    "static/media/wine-logo.jpg": "/wines-shop/static/media/wine-logo.b88922ba1925db643f08.jpg",
+    "static/media/user.png": "/wines-shop/static/media/user.c920752422c11377083e.png",
+    "static/media/information.png": "/wines-shop/static/media/information.9c4331cd5fbc551e3cc6.png",
+    "static/media/phone-call.png": "/wines-shop/static/media/phone-call.d35848942c955a6232b3.png",
+    "static/media/apps-outline.svg": "/wines-shop/static/media/apps-outline.0f19a5a07a7d945a9fdcdfdc480111de.svg",
+    "static/media/star-rating.svg": "/wines-shop/static/media/star-rating.143d0ae4d84e8340b57d44031596635a.svg",
+    "static/media/eye-off.svg": "/wines-shop/static/media/eye-off.05190e648ac6c878614e941cec00e2ed.svg",
+    "static/media/logo-dribbble.svg": "/wines-shop/static/media/logo-dribbble.e990633d2a924ddefab1baf2e81deaf8.svg",
+    "static/media/paper-plane-regular.svg": "/wines-shop/static/media/paper-plane-regular.df8b443b3518cf31742eeaf8f24f22e3.svg",
+    "static/media/logo-twitter.svg": "/wines-shop/static/media/logo-twitter.62976c081dee9df5e089714a43f81083.svg",
+    "static/media/cart-outline.svg": "/wines-shop/static/media/cart-outline.ec34e04f278866298777c9836305a693.svg",
+    "static/media/logo-instagram.svg": "/wines-shop/static/media/logo-instagram.3f986527d185ed9ef19e215f7637f59f.svg",
+    "static/media/eye.svg": "/wines-shop/static/media/eye.adec2da06bd75752dafca246ad1d0873.svg",
+    "index.html": "/wines-shop/index.html",
+    "static/media/logo-facebook.svg": "/wines-shop/static/media/logo-facebook.84318d1245b58f3c15c8fe7a85568b74.svg",
+    "static/media/heart-outline.svg": "/wines-shop/static/media/heart-outline.c1c4496e9c54cd0f6f36566111f7e589.svg",
+    "static/media/search-outline.svg": "/wines-shop/static/media/search-outline.c3a9b743b3bfe662b7143a41bc6656cd.svg",
+    "static/media/bag-outline.svg": "/wines-shop/static/media/bag-outline.fb2eb1d5589d1a96a64123e9f40d429a.svg",
+    "static/media/arrow-forward-outline.svg": "/wines-shop/static/media/arrow-forward-outline.3abe6c09c947449e1a780d824ff284ab.svg",
+    "static/media/chevron-forward-outline.svg": "/wines-shop/static/media/chevron-forward-outline.dd26bac30e254e0193115120fb087de2.svg",
+    "main.b7d3abb9.css.map": "/wines-shop/static/css/main.b7d3abb9.css.map",
+    "main.8417ddb4.js.map": "/wines-shop/static/js/main.8417ddb4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7d3abb9.css",
+    "static/js/main.8417ddb4.js"
+  ]
+}
