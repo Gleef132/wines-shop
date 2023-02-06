@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wines-shop/static/css/main.b7d3abb9.css",
-    "main.js": "/wines-shop/static/js/main.2d42774e.js",
+    "main.js": "/wines-shop/static/js/main.9247dd84.js",
     "static/media/top-view-wine-bottles-with-grapes.png": "/wines-shop/static/media/top-view-wine-bottles-with-grapes.112828e84c01683078ff.png",
     "static/media/wooden-barrel-with-bottles-glasses-wine.png": "/wines-shop/static/media/wooden-barrel-with-bottles-glasses-wine.ef74ed74febc0e69fbef.png",
     "static/media/winegrape.png": "/wines-shop/static/media/winegrape.23a020f280dbf94b4975.png",
@@ -26,10 +26,10 @@
     "static/media/arrow-forward-outline.svg": "/wines-shop/static/media/arrow-forward-outline.3abe6c09c947449e1a780d824ff284ab.svg",
     "static/media/chevron-forward-outline.svg": "/wines-shop/static/media/chevron-forward-outline.dd26bac30e254e0193115120fb087de2.svg",
     "main.b7d3abb9.css.map": "/wines-shop/static/css/main.b7d3abb9.css.map",
-    "main.2d42774e.js.map": "/wines-shop/static/js/main.2d42774e.js.map"
+    "main.9247dd84.js.map": "/wines-shop/static/js/main.9247dd84.js.map"
   },
   "entrypoints": [
     "static/css/main.b7d3abb9.css",
-    "static/js/main.2d42774e.js"
+    "static/js/main.9247dd84.js"
   ]
 }
